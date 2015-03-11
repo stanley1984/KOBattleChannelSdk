@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/broadcast_image_view" android:background="@drawable/vs_ico_loudspeaker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/broadcast_image_view" />
+    <TextView android:textSize="@dimen/font_size30px" android:textColor="@color/orange" android:id="@id/battle_hall_broadcast_category_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/office" style="@style/WhiteTextStyle" />
+    <TextView android:textSize="@dimen/font_size30px" android:textColor="@color/white_per80" android:ellipsize="marquee" android:gravity="center" android:id="@id/battle_hall_broadcast_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/office_tips" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/WhiteTextStyle" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/stroke_width3px" android:color="#1affffff" />
+    <corners android:bottomLeftRadius="@dimen/battle_hall_label_bg_corner_radius_20px" android:bottomRightRadius="@dimen/battle_hall_label_bg_corner_radius_20px" />
+</shape>

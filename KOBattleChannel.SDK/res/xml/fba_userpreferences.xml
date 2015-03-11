@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/display_mode">
+        <cn.vszone.emulator.view.VsListPreference android:entries="@array/fba_pref_scaleMode_options" android:title="@string/zoom_model" android:key="FBA_PREF_LANDSCAPE_SCALING_MODE" android:defaultValue="6" android:entryValues="@array/pref_scaleMode_values" />
+        <CheckBoxPreference android:title="@string/smoothing_model" android:key="FBA_PREF_LANDSCAPE_BITMAP_FILTERING" android:summary="@string/smoothing_model_sumary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

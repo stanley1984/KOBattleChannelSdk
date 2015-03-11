@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/global_model">
+        <CheckBoxPreference android:title="ASM CPU cores" android:key="PREF_GLOBAL_ASMCORES" android:summary="@string/asm_cpu_cores_sumary" android:defaultValue="true" />
+        <cn.vszone.emulator.view.VsListPreference android:entries="@array/pref_global_video_render_options" android:title="@string/video_rendering_mode" android:key="PREF_GLOBAL_VIDEO_RENDER_MODE" android:defaultValue="3" android:entryValues="@array/pref_global_video_render_values" />
+        <CheckBoxPreference android:title="@string/sound_thread" android:key="PREF_GLOBAL_SOUND_THREADED" android:summary="@string/sound_thread_sumary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/power_model" android:key="PREF_GLOBAL_IDLE_WAIT" android:summary="@string/power_model_sumary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/display_mode">
+        <cn.vszone.emulator.view.VsListPreference android:entries="@array/pref_scaleMode_options" android:title="@string/zoom_model" android:key="PREF_LANDSCAPE_SCALING_MODE_2" android:defaultValue="6" android:entryValues="@array/pref_scaleMode_values" />
+        <CheckBoxPreference android:title="@string/smoothing_model" android:key="PREF_LANDSCAPE_BITMAP_FILTERING" android:summary="@string/smoothing_model_sumary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

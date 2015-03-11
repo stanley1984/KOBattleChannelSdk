@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ko_battleitem_default_bg_big_shape" android:layout_width="@dimen/ko_battle_my_account_info_width_1128px" android:layout_height="@dimen/ko_battle_my_account_list_item_height_180px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ko_battle_my_account_listitem_gameIv" android:layout_width="@dimen/ko_battle_my_account_list_item_img_width_128px" android:layout_height="@dimen/ko_battle_my_account_list_item_height_180px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ko_battle_main_margin_40px" android:layout_toRightOf="@id/ko_battle_my_account_listitem_gameIv" android:layout_centerVertical="true">
+        <TextView android:textColor="@color/white_per80" android:id="@id/ko_battle_my_account_listitem_gameName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ko_battle_my_account_listitem_ll_battle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ko_battle_main_margin_20px">
+            <ImageView android:layout_width="@dimen/ko_battle_my_account_list_item_win_width_54px" android:layout_height="@dimen/ko_battle_my_account_list_item_win_height_40px" android:src="@drawable/ko_vs_ico_win" />
+            <TextView android:textColor="@color/white_per60" android:id="@id/ko_battle_my_account_listitem_game_win_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ko_battle_main_margin_20px" />
+            <ImageView android:layout_width="@dimen/ko_battle_my_account_list_item_win_width_54px" android:layout_height="@dimen/ko_battle_my_account_list_item_win_height_40px" android:layout_marginLeft="@dimen/ko_battle_main_margin_40px" android:src="@drawable/ko_vs_ico_lose" />
+            <TextView android:textColor="@color/white_per60" android:id="@id/ko_battle_my_account_listitem_game_lose_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ko_battle_main_margin_20px" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ko_battle_my_account_listitem_ll_levelMode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ko_battle_main_margin_20px">
+            <ImageView android:id="@id/ko_battle_my_account_list_item_best_iv" android:layout_width="@dimen/ko_battle_my_account_list_item_today_best_width_134px" android:layout_height="@dimen/ko_battle_my_account_list_item_win_height_40px" android:src="@drawable/ko_vs_ico_best_history" />
+            <TextView android:textColor="@color/white_per60" android:id="@id/ko_battle_my_account_list_item_score_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ko_battle_main_margin_20px" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ko_battle_main_margin_20px">
+            <TextView android:id="@id/ko_battle_my_account_list_item_todayRanking_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/ko_battle_my_account_list_item_tendency_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ko_battle_main_margin_20px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ko_battle_main_margin_60px">
+            <ImageView android:layout_width="@dimen/ko_battle_my_account_list_item_win_num_width_94px" android:layout_height="@dimen/ko_battle_my_account_list_item_win_num_width_94px" android:src="@drawable/ko_vs_ico_no_1" />
+            <cn.vszone.ko.widget.views.NumberView android:layout_gravity="center_horizontal" android:id="@id/ko_battle_my_account_list_item_top_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ko_battle_main_margin_20px" app:number="0" app:style="orange" app:minLength="1" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ko_battle_main_margin_60px">
+            <ImageView android:layout_width="@dimen/ko_battle_my_account_list_item_win_num_width_94px" android:layout_height="@dimen/ko_battle_my_account_list_item_win_num_width_94px" android:src="@drawable/ko_vs_ico_no_2" />
+            <cn.vszone.ko.widget.views.NumberView android:layout_gravity="center_horizontal" android:id="@id/ko_battle_my_account_list_item_top_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ko_battle_main_margin_20px" app:number="0" app:style="orange" app:minLength="1" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ko_battle_main_margin_40px">
+            <ImageView android:layout_width="@dimen/ko_battle_my_account_list_item_win_num_width_94px" android:layout_height="@dimen/ko_battle_my_account_list_item_win_num_width_94px" android:src="@drawable/ko_vs_ico_no_3" />
+            <cn.vszone.ko.widget.views.NumberView android:layout_gravity="center_horizontal" android:id="@id/ko_battle_my_account_list_item_top_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ko_battle_main_margin_20px" app:number="0" app:style="orange" app:minLength="1" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

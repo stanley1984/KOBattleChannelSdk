@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="150" android:drawable="@drawable/ko_vs_ico_qr_code_focus_left_up" />
+    <item android:duration="150" android:drawable="@drawable/ko_vs_ico_qr_code_focus_right_up" />
+    <item android:duration="150" android:drawable="@drawable/ko_vs_ico_qr_code_focus_right_lower" />
+    <item android:duration="150" android:drawable="@drawable/ko_vs_ico_qr_code_focus_left_lower" />
+</animation-list>

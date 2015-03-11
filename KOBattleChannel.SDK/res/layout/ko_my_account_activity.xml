@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ko_my_account_portrait_ll" android:layout_width="@dimen/ko_battle_my_account_portrait_380px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ko_battle_my_account_marginLeft_168px" android:layout_marginTop="@dimen/ko_battle_my_account_marginTop_200px">
+        <ImageView android:id="@id/ko_my_account_iv_avatar" android:layout_width="@dimen/ko_battle_my_account_portrait_380px" android:layout_height="@dimen/ko_battle_my_account_portrait_380px" android:src="@drawable/ko_vs_pic_avatar_small" android:contentDescription="@string/image_description" />
+        <cn.vszone.ko.tv.views.FontEnlargeTextView android:textSize="@dimen/font_size36px" android:textColor="@drawable/prompt_dialog_bt_textcolor_selector" android:gravity="center" android:id="@id/ko_my_account_fetv_modif_name" android:background="@drawable/ko_my_account_menu_btn_bg_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/ko_battle_my_account_button_height_80px" android:layout_marginTop="@dimen/ko_battle_main_margin_20px" android:text="@string/my_account_modif_nick_name" />
+        <cn.vszone.ko.tv.views.FontEnlargeTextView android:textSize="@dimen/font_size36px" android:textColor="@drawable/prompt_dialog_bt_textcolor_selector" android:gravity="center" android:id="@id/ko_my_account_fetv_modif_avatar" android:background="@drawable/ko_my_account_menu_btn_bg_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/ko_battle_my_account_button_height_80px" android:layout_marginTop="@dimen/ko_battle_main_margin_20px" android:text="@string/my_account_modif_nick_avatar" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/ko_battle_my_account_info_width_1128px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ko_battle_my_account_marginLeft_80px" android:layout_marginTop="@dimen/ko_battle_my_account_marginTop_200px" android:layout_toRightOf="@id/ko_my_account_portrait_ll">
+        <TextView android:textSize="@dimen/font_size36px" android:textColor="@color/white_per80" android:id="@id/ko_my_account_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_account_nick_name" android:maxLength="8" />
+        <TextView android:textSize="@dimen/font_size20px" android:id="@id/ko_my_account_last_login_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ko_my_account_test_str" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size30px" android:textColor="@color/white_per80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ko_my_account_record" />
+            <ImageView android:background="@color/black_per15" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="@dimen/ko_battle_main_margin_20px" />
+        </LinearLayout>
+        <cn.vszone.ko.tv.battle.channel.view.MainBattleScrollView android:scrollbars="none" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ko_battle_main_margin_20px" android:listSelector="@null">
+            <LinearLayout android:orientation="vertical" android:id="@id/ko_my_account_battle_info_list" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </cn.vszone.ko.tv.battle.channel.view.MainBattleScrollView>
+    </LinearLayout>
+</RelativeLayout>
